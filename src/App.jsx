@@ -14,12 +14,10 @@ function App() {
     <>
       <div>
       <Header />
-      <ArticleList />
       <TopicsList />
-      <Article />
       <Routes>
         <Route path="/articles"  element ={<ArticleList/>}/>
-            
+        <Route path="/articles/:article_id"  element ={<Article/>}/>   
       </Routes>
       </div>
     </>
