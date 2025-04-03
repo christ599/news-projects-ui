@@ -24,10 +24,10 @@ const ArticleList = () => {
       return articles.map((article)=>{
         return (
             <section key ={article.article_id}>
-              <h3>{article.author}</h3> 
-              <h3>{article.title}</h3> 
-              <h3>{article.aticle_id}</h3> 
-              <h3>{article.topic}</h3> 
+              <h3>author: {article.author}</h3> 
+              <Link to={`/articles/${article.article_id}`}>
+              <h3> title: {article.title}</h3> 
+              </Link>
               <img src ={article.article_img_url}/>
 
             </section>
