@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+
+App {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.header nav {
+  display: inline-flex;
+  gap: 10px;
+  font-size:x-large ;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.article-list, .article-detail {
+  margin: 20px;
+}
+
+.article-list h3 {
+  font-size: 24px;
+}
+
+.comment-list ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment-list li{
+  margin: 10px 0;
+}

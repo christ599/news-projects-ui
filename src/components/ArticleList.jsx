@@ -23,31 +23,17 @@ const ArticleList = () => {
       
       return articles.map((article)=>{
         return (
-            <section key ={article.article_id}>
+            <div className = "article-list"key ={article.article_id}>
               <h3>author: {article.author}</h3> 
               <Link to={`/articles/${article.article_id}`}>
               <h3> title: {article.title}</h3> 
-              </Link>
+              </Link> 
               <img src ={article.article_img_url}/>
 
-            </section>
+            </div>
         )
-
       })
     };
 
     export default ArticleList;
-    /*return (
-        <div>
-          <h2>Articles</h2>
-          <ul>
-            {articles.map((article) => (
-              <li key={article.article_id}>
-                  <h3>{article.title}</h3>
-                <p>{article.article_img_url}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      );*/
   
